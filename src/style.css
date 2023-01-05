@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+}
+.jogo{
+    display: block;
+    align-items: center;
+    background-color: red;
+    margin: 0 auto;
+}
+.modal-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background-color: white;
+    width: 500px;
+    border-radius: 8px;
+}
+.modal-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.modal-close{
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+.modal-body{
+    padding: 24px ;
+}
+.show-modal{
+    display: flex;
+}
+.show-modal .modal{
+    animation:modalAnimation 1s;
+}
+
+@keyframes modalAnimation {
+    0%{
+        opacity: 0;
+       transform: translateY(-50%);
+    }
+    100%{
+    opacity: 1;
+        transform: translateY(0);
+    }
+
+}

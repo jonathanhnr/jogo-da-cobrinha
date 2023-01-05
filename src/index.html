@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+       <canvas class="jogo" id="stage" width="400" height="400">
+       </canvas>
+       <button data-modal-control="fim"></button>
+      <div class="modal-wrapper"  id="fim">
+          <div class="modal">
+              <div class="modal-header">
+                  <h3 class="modal-title">title</h3>
+                  <button class="modal-close" data-modal-control="fim" >x</button>
+              </div>
+              <div class="modal-body">
+                  modal da cobrinha
+                  <p><button  data-modal-control="fim">voltar a jogar</button></p>
+              </div>
+          </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
